@@ -1,0 +1,10 @@
+[Unit]
+Description=My Script Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/joachim/webssh/test/bin/wssh
+
+[Install]
+WantedBy=multi-user.target
