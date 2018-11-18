@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/home/joachim/webssh/test/bin/wssh
+ExecStart=/usr/local/bin/wssh
 
 [Install]
 WantedBy=multi-user.target
