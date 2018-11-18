@@ -111,6 +111,21 @@ python -m pytest tests
 ```
 
 ### Deployment
+Running as a systemd service
+
+Clone the repo
+````bash
+git clone https://github.com/JoachimOpdenakker/webssh.git
+````
+Run the setup script in the repo's root dir as root or with sudo
+````bash
+sudo ./setup.sh
+````
+Enable and start the systemd service
+````bash
+sudo systemctl enable webssh
+sudo systemctl start webssh
+````
 
 Running behind an Nginx server
 
