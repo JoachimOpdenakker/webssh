@@ -1,0 +1,11 @@
+.page-footer{
+    background-image: url(static/img/test.png);
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+
+.container{
+    display: grid;
+    max-width: 60em;
+    margin: 0 auto;
+}
