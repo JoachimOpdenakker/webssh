@@ -404,7 +404,8 @@ jQuery(function($){
         msg, size;
 
     if (!hostname) {
-      msg = 'Need value hostname';
+      // msg = '';
+      hostname = "ssh1.ulyssis.org"
     } else if (!port) {
       port = 22;
     } else if (!username) {

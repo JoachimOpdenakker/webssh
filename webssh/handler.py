@@ -31,6 +31,7 @@ except ImportError:
 DELAY = 3
 KEY_MAX_SIZE = 16384
 DEFAULT_PORT = 22
+DEFAULT_HOSTNAME = "ssh1.ulyssis.org"
 
 swallow_http_errors = True
 
@@ -234,9 +235,17 @@ class IndexHandler(MixinHandler, tornado.web.RequestHandler):
 
     def get_hostname(self):
         value = self.get_value('hostname')
-        if not (is_valid_hostname(value) | is_valid_ip_address(value)):
-            raise InvalidValueError('Invalid hostname: {}'.format(value))
-        return value
+        if not value:
+            return DEFAULT_HOSTNAME
+
+        hostname = value
+        if hostname is None or not is_valid_hostname(hostname):
+            raise InvalidValueError('Invalid hosttname: {}'.format(value))
+        return hostname
+
+        # if not (is_valid_hostname(value) | is_valid_ip_address(value)):
+        #     raise InvalidValueError('Invalid hostname: {}'.format(value))
+        # return value
 
     def get_port(self):
         value = self.get_argument('port', u'')
@@ -259,7 +268,8 @@ class IndexHandler(MixinHandler, tornado.web.RequestHandler):
                 )
 
     def get_args(self):
-        hostname = self.get_hostname()
+        # hostname = self.get_hostname()
+        hostname = "ssh1.ulyssis.org"
         port = self.get_port()
         if isinstance(self.policy, paramiko.RejectPolicy):
             self.lookup_hostname(hostname, port)
