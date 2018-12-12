@@ -269,7 +269,7 @@ class IndexHandler(MixinHandler, tornado.web.RequestHandler):
 
     def get_args(self):
         # hostname = self.get_hostname()
-        hostname = "ssh1.ulyssis.org"
+        hostname = "ssh2.ulyssis.org"
         port = self.get_port()
         if isinstance(self.policy, paramiko.RejectPolicy):
             self.lookup_hostname(hostname, port)
