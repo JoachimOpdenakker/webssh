@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 html{
     position: relative;
     min-height: 100%;
 }
 body{
-    margin-bottom: 60px; /* Margin bottom by footer height */
     background-color: #323945;
     background-image: url(../../static/img/bgpattern.svg);
     background-size: 1.2em;
@@ -21,7 +21,8 @@ body{
 .container img{
     max-width: 70%;
     margin: 0 auto;
-    margin-top: 1em;
+    margin-top: 2.2em;
+    padding-left: 1em;
 }
 h3{
     color: black;
@@ -31,7 +32,7 @@ h3{
     padding-bottom: 25px;
 }
 .login-container{
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 .login-form-1{
     padding: 5%;
@@ -90,6 +91,10 @@ h3{
     color: #0062cc;
     font-weight: 600;
     text-decoration: none;
+}
+.copyright-footer{
+    color: white;
+    text-align: center;
 }
 .footer {
     position: absolute;
