@@ -36,8 +36,9 @@ h3{
 }
 .login-form-1{
     padding: 5%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-}
+    -webkit-box-shadow: 9px 11px 61px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 9px 11px 61px 5px rgba(0,0,0,1);
+    box-shadow: 9px 11px 61px 5px rgba(0,0,0,1);}
 .login-form-1 h3{
     text-align: center;
     color: #333;
@@ -46,8 +47,9 @@ h3{
     margin: 0.2em;
     padding: 10%;
     background: white;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 3px;
+    -webkit-box-shadow: 9px 11px 61px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 9px 11px 61px 5px rgba(0,0,0,1);
+    box-shadow: 9px 11px 61px 5px rgba(0,0,0,1);    border-radius: 3px;
 
 }
 .login-form-2 h3{
@@ -95,6 +97,7 @@ h3{
 .copyright-footer{
     color: white;
     text-align: center;
+    margin-top: 1.5em;
 }
 .footer {
     position: absolute;
