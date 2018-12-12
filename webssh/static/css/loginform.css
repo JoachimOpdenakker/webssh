@@ -7,7 +7,7 @@ body{
     background-color: #323945;
     background-image: url(../../static/img/bgpattern.svg);
     background-size: 1.2em;
-    font-family: "proxima-nova", helvetica;
+    /* font-family: "proxima-nova", helvetica; */
 
 }
 .form-control{
@@ -19,7 +19,7 @@ body{
     margin: 0 auto;
 }
 .container img{
-    max-width: 70%;
+    max-width: 60%;
     margin: 0 auto;
     margin-top: 2.2em;
     padding-left: 1em;
@@ -97,7 +97,7 @@ h3{
 .copyright-footer{
     color: white;
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 .footer {
     position: absolute;
